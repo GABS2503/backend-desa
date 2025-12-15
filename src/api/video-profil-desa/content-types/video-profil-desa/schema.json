@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_profil_desas",
+  "info": {
+    "singularName": "video-profil-desa",
+    "pluralName": "video-profil-desas",
+    "displayName": "video-profil-desa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "youtube_url": {
+      "type": "string"
+    }
+  }
+}

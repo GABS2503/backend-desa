@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "struktur_desas",
+  "info": {
+    "singularName": "struktur-desa",
+    "pluralName": "struktur-desas",
+    "displayName": "Struktur-desa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "gambar_struktur": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

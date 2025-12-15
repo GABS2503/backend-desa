@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bidang_desas",
+  "info": {
+    "singularName": "bidang-desa",
+    "pluralName": "bidang-desas",
+    "displayName": "Bidang-desa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_bidang": {
+      "type": "string"
+    },
+    "deskripsi": {
+      "type": "blocks"
+    }
+  }
+}

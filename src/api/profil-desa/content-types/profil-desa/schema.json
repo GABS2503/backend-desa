@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profil_desas",
+  "info": {
+    "singularName": "profil-desa",
+    "pluralName": "profil-desas",
+    "displayName": "Profil Desa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "visi": {
+      "type": "string"
+    },
+    "sejarah": {
+      "type": "blocks"
+    },
+    "luas": {
+      "type": "string"
+    },
+    "batas": {
+      "type": "text"
+    }
+  }
+}
