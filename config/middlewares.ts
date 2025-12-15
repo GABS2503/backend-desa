@@ -9,7 +9,7 @@ export default [
       enabled: true,
 
       origin: [
-        'https://webdesabetelensatu.vercel.app/',
+        'https://webdesabetelensatu.vercel.app',
       ],
 
       credentials: true,
