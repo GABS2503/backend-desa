@@ -8,24 +8,13 @@ export default [
     config: {
       enabled: true,
 
-      origin: ({ origin }) => {
-        const allowedOrigins = [
-          'https://webdesabetelensatu-kgcj47wda-gabs2503s-projects.vercel.app',
-        ];
+      origin: [
+        'https://webdesabetelensatu-kgcj47wda-gabs2503s-projects.vercel.app',
+      ],
 
-        // allow server-side & tools like curl/postman
-        if (!origin) return origin;
-
-        if (allowedOrigins.includes(origin)) {
-          return origin;
-        }
-
-        return false;
-      },
-
+      credentials: true,
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization'],
-      credentials: true,
     },
   },
 
