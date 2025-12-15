@@ -7,9 +7,22 @@ export default [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: [
-        'https://webdesabetelensatu-kgcj47wda-gabs2503s-projects.vercel.app',
-      ],
+
+      origin: ({ origin }) => {
+        const allowedOrigins = [
+          'https://webdesabetelensatu-kgcj47wda-gabs2503s-projects.vercel.app',
+        ];
+
+        // allow server-side & tools like curl/postman
+        if (!origin) return origin;
+
+        if (allowedOrigins.includes(origin)) {
+          return origin;
+        }
+
+        return false;
+      },
+
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization'],
       credentials: true,
