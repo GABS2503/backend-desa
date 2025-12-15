@@ -7,14 +7,13 @@ export default [
     name: 'strapi::cors',
     config: {
       origin: [
-        'http://localhost:3000',
         'http://localhost:5173',
-        'http://localhost:5500',
-        'https://webdesabetelensatu-c2o6qf8yg-gabs2503s-projects.vercel.app/', // GANTI INI
+        'http://localhost:3000',
+        'https://webdesabetelensatu-c2o6qf8yg-gabs2503s-projects.vercel.app',
       ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization'],
-      credentials: true,
+      credentials: false,
     },
   },
 
